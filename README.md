@@ -1,14 +1,18 @@
 # ModularMegaModpack
 Factorio Modpack made to be on a pick-and-choose basis. 
 
+For best Experience install also:
+
+Angel Suite, Bob Suite and Omnisuite.
+
 
 Requirements:
 
-For all mods:
+For ModularLib:
   - Omnilib
 	
 Xander Overhaul:
-  - null
+  - ModularLib
 
 Credits:
 

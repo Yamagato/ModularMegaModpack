@@ -11,7 +11,7 @@ function addToFurnaceSmelting (ingredients, results, modName)
 		marathon():
 		setEnergy(5):
 		setIngredients(ingredients):
-		setIcons(oreName):
+		setIcons(results[1]["name"]):
 		setEnabled():
 		setResults(results):
 		extend()
@@ -29,14 +29,14 @@ function addToKilnSmelting (ingredients, results, modName)
 		marathon():
 		setEnergy(5):
 		setIngredients(ingredients):
-		setIcons(oreName):
+		setIcons(results[1]["name"]):
 		setEnabled():
 		setResults(results):
 		extend()
 end
 --Assumption: Omnimatter Present
-function addToBurnerExtraction (oreName, modName)
-	RecGen:create(modName,"omni-"..oreName.."-general-1"):
+function addToBurnerExtractionFromOmnite (oreName, modName)
+	RecGen:create(modName, oreName.."-burner-extraction"):
 		setCategory("omnite-extraction-burner"):
 		marathon():
 		setEnergy(5):
@@ -47,4 +47,21 @@ function addToBurnerExtraction (oreName, modName)
 			{type="item", name="stone-crushed", amount=4},
 			{type="item", name=oreName, amount=1}
 		):extend()
+end
+
+function addToBurnerExtraction(ingredients, results, modName)
+	if ingredients["name"] then ingredients = {ingredients} end
+	if results["name"] then results = {results} end
+	for index, result in pairs(results) do
+		if not result["type"] then result["type"] = "item" end
+	end
+	RecGen:create(modName,"impure-"..results[1]["name"].."-burner-extraction"):
+		setCategory("omnite-extraction-burner"):
+		marathon():
+		setEnergy(5):
+		setIngredients(ingredients):
+		setIcons(ingredients[1]["name"]):
+		setEnabled():
+		setResults(results):
+		extend()
 end
