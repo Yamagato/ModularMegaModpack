@@ -16,7 +16,7 @@ Xander Overhaul:
 
 Credits:
 
-Ask about the dev team at: https://discord.gg/B6RrFG
+Ask about the dev team at: https://discord.gg/Vc8UTvA
 
 Original Xander Dev: Repofme1 (https://mods.factorio.com/user/repofme1)
 
