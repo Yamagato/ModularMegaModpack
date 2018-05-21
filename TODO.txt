@@ -5,7 +5,6 @@ Omni Suite
 
 
 Mods in development:
-Recipe Exporter
 ModularLib
 Xander
 
