@@ -1,3 +1,4 @@
+--Creates a new group given a name (doesn't check if given group exists)
 function createGroup(groupName)
 	data:extend({{
 		type = "item-group",
@@ -9,6 +10,7 @@ function createGroup(groupName)
 	 }})
 end
 
+--Creates a new subgroup for a given group (doesn't check if give sugroup or group exists)
 function createSubgroup(subgroupName, groupName)
 	log("Adding subgroup "..subgroupName)
 	data:extend({{
