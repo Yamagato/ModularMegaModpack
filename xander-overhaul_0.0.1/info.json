@@ -1,10 +1,10 @@
 {
   "name": "xander-overhaul",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "factorio_version": "0.16",
   "title": "Xander Ovehaul",
   "author": "Sir_Cherry",
-  "homepage": "https://forums.factorio.com/viewtopic.php?f=97&t=51868",
-  "dependencies": ["base", "xander-mod-graphics-0", "omnilib", "? omnimatter", "? angelrefining", "? bobores"],
+  "homepage": "",
+  "dependencies": ["base", "modularlib"],
   "description": "An overhaulof Repofme1's Xander mod to be more compatible with other mods (Bobs, Angels, Omnimatter)"
 }

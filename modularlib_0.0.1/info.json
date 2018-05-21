@@ -1,0 +1,10 @@
+{
+  "name": "modularlib",
+  "version": "0.0.1",
+  "factorio_version": "0.16",
+  "title": "Modular Lib",
+  "author": "Sir_Cherry",
+  "homepage": "",
+  "dependencies": ["base", "omnilib"],
+  "description": "A common Library for all 'Modular Mods'. It defines shorthand versions for frequently used omnilib functions."
+}
