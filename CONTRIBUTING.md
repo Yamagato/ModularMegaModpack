@@ -1,6 +1,7 @@
 Guidelines for Contributing to ModularMegaModpack
 
  Ensure that all pull requests are written to be understood by anyone who's reading the code.
+ The code should be commented and abide by common naming schemes.
  Do your best to avoid making redundant functions within your additons - use what's already been developed before you make it again yourself.
  
  
