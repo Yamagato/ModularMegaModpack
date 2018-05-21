@@ -1,4 +1,11 @@
+Mods mostly done:
+Angel Suite
+Bob Suite
+Omni Suite
+
+
 Mods in development:
+Recipe Exporter
 ModularLib
 Xander
 
@@ -6,3 +13,7 @@ Mods Planned:
 Dectorio
 Py Suite
 Yuoki Suite
+Science Cost Tweaker
+Kao Extended
+Clown Suite
+
