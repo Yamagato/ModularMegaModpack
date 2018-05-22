@@ -1,7 +1,7 @@
 createCraftingMachine("building-kiln", {name="stone" ,amount=25}, {"kiln"}, "xander-overhaul", {enableBurner=true, efficiency=0.3, slotNumber=2}):setAnimation({
 	layers={
 	{
-        filename = "__xander-omni__/graphics/entities/buildings/burner-building-kiln.png",
+        filename = "__xander-overhaul__/graphics/entities/buildings/burner-building-kiln.png",
 		priority = "extra-high",
         width = 81,
         height = 64,
@@ -11,4 +11,4 @@ createCraftingMachine("building-kiln", {name="stone" ,amount=25}, {"kiln"}, "xan
 		scale = 1,
 		animation_speed = 0.5
 	},
-	}}):extend()
+	}}):setEnabled():extend()

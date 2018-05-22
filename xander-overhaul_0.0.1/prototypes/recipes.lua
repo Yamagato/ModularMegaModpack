@@ -25,6 +25,6 @@ if omni.lib.does_exist("plate-impure-tin-kiln-smelting") and omni.lib.does_exist
 end
 
 if mods["omnimatter"] then
-	omni.lib.add_recipe_ingredient("pulverized-stone", "dust-gravel")
+	omni.lib.replace_recipe_result("pulverized-stone", "pulverized-stone", "dust-gravel")
 	addToBurnerExtraction({name="dust-gravel",amount=10}, {{name="dust-clay",amount=4},{name="dust-sand",amount=3},{name="pulverized-stone",amount=3}}, "xander-overhaul")
 end
