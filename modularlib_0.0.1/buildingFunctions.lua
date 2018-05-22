@@ -2,45 +2,43 @@
 
 --This function will create a crafting machine (Assembly Machine, Furnace, etc)
 function createFurnace(machineName, ingredients, craftingCategories, modName)
-	BuildGen:create(modName, machineName):
+	building = BuildGen:create(modName, machineName):
 		setFurnace():
 		setReplace("furnace"):
 		setSize(2):
 		setHealth(200):
 		setSpeed(1):
-		setBurnEfficiency(0.3):
+		setBurner(0.3, 1):
 		setCrafting(craftingCategories):
-		setBurnSlots(1):
 		addSmoke():
-		extend()
-	addToHandCrafting(ingredients, {name=machineName, amount=1},modName, burnerInfo)
+		setCategory("crafting"):
+		setIngredients(ingredients)
+	return building
 end
 
-function createDrill(machineName, ingredients, modName)
+-- burnerInfo_example = {"enableBurner" = true, "efficiency" = 0.5, "slotNumber" = 1} or nil
+function createDrill(machineName, ingredients, modName, burnerInfo)
 	building = BuildGen:create(modName, machineName):
 		setDrill():
 		setReplace("drill"):
 		setSize(2):
 		setHealth(200):
 		setSpeed(1):
-		setBurnEfficiency(0.3):
-		setCrafting(craftingCategories):
-		setBurnSlots(1):
-		addSmoke()
+		setCategory("crafting"):
+		setIngredients(ingredients)
 	if burnerInfo and burnerInfo["enableBurner"] then building:setBurner(burnerInfo["efficiency"], burnerInfo["slotNumber"]):addSmoke() end
-	building:extend()
-	addToHandCrafting(ingredients, {name=machineName, amount=1},modName)
+	return building
 end
 
-function createCraftingMachine(machineName, ingredients, craftingCategories, modName, replaceGroup, burnerInfo)
+-- burnerInfo_example = {"enableBurner" = true, "efficiency" = 0.5, "slotNumber" = 1} or nil
+function createCraftingMachine(machineName, ingredients, craftingCategories, modName, burnerInfo)
 	building = BuildGen:create(modName, machineName):
-		setReplace("furnace"):
 		setSize(2):
 		setHealth(200):
 		setSpeed(1):
-		setCrafting(craftingCategories)
+		setCrafting(craftingCategories):
+		setCategory("crafting"):
+		setIngredients(ingredients)
 	if burnerInfo and burnerInfo["enableBurner"] then building:setBurner(burnerInfo["efficiency"], burnerInfo["slotNumber"]):addSmoke() end
-	if replaceGroup then building:setReplace(replaceGroup) end
-	building:extend()
-	addToHandCrafting(ingredients, {name=machineName, amount=1},modName)
+	return building
 end

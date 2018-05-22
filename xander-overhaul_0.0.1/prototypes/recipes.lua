@@ -26,5 +26,5 @@ end
 
 if mods["omnimatter"] then
 	omni.lib.add_recipe_ingredient("pulverized-stone", "dust-gravel")
-	addToBurnerExtraction({name="dust-gravel",amount=10}, {{name="dust-clay",amount=4},{name="dust-sand",amount=3},{name="pulverised-stone",amount=3}}, "xander-overhaul")
+	addToBurnerExtraction({name="dust-gravel",amount=10}, {{name="dust-clay",amount=4},{name="dust-sand",amount=3},{name="pulverized-stone",amount=3}}, "xander-overhaul")
 end
