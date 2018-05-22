@@ -73,3 +73,21 @@ function addToBurnerExtraction(ingredients, results, modName)
 		setResults(results):
 		extend()
 end
+
+function addToHandCrafting(ingredients, results, modName)
+-- For simplicity sake, the code assumes that there are no liquids in the results and that the main result is the first one in the list
+	if ingredients["name"] then ingredients = {ingredients} end
+	if results["name"] then results = {results} end
+	for index, result in pairs(results) do
+		if not result["type"] then result["type"] = "item" end
+	end
+	RecGen:create(modName,results[1]["name"].."-hand-crafting"):
+		setCategory("crafting"):
+		marathon():
+		setEnergy(5):
+		setIngredients(ingredients):
+		setIcons(ingredients[1]["name"]):
+		setEnabled():
+		setResults(results):
+		extend()
+end

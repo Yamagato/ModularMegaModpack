@@ -5,6 +5,6 @@
   "title": "Xander Ovehaul",
   "author": "Sir_Cherry",
   "homepage": "",
-  "dependencies": ["base", "modularlib" "? omnimatter"],
+  "dependencies": ["base", "modularlib", "? omnimatter"],
   "description": "An overhaulof Repofme1's Xander mod to be more compatible with other mods (Bobs, Angels, Omnimatter)"
 }

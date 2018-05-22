@@ -9,5 +9,6 @@ addItem("dust-sand", "material")
 addItem("dust-gravel", "material")
 addItem("dust-clay", "material")
 addItem("brick-clay", "material")
+addItem("building-kiln", "building")
 
 finalizeItems()

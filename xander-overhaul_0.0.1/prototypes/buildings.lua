@@ -1,0 +1,1 @@
+createFurnace("building-kiln", {name="stone" ,amount=25}, {"kiln"}, "xander-overhaul")
