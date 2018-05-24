@@ -1,0 +1,4 @@
+Oval            - External Input
+Diamond         - Process Result/Internal Input
+Rectangle       - Process
+Tilde Rectangle - Waste product
