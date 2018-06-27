@@ -5,6 +5,7 @@ function addAutoPlaceControl(autoPlaceControlName)
 		name = autoPlaceControlName,
 		richness = true,
 		order = "modular",
+		category = "resource",
 	}})
 end
 function addNoiseLayer(noiseLayerName)
