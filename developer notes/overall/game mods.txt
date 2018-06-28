@@ -1,0 +1,4 @@
+Game Modes:
+	Vanilla
+	Sea Block
+	Frozen World
